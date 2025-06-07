@@ -1,0 +1,142 @@
+/* Genel sayfa ayarları */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4; /* açık krem rengi arka plan */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #f5deb3; /* Krem rengi */
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Navigasyon */
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333; /* Koyu gri metin rengi */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Ana içerik alanı */
+main {
+    padding: 30px 10%;
+    background-color: #fff; /* Beyaz zemin */
+    margin-top: 20px;
+}
+
+/* Kitaplar Listesi Başlığı */
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 40px;
+    color: #5f4b3d; /* Koyu krem tonları */
+}
+
+/* Kitaplar için flex container */
+.kitaplar {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Kitap Kartları */
+.kitap {
+    background-color: #fff5e1; /* Krem rengi arka plan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Kitap kartı hover efekti */
+.kitap:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Kitap başlıkları ve yazıları */
+.kitap h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 0;
+    color: #5f4b3d; /* Koyu krem rengi */
+}
+
+.kitap p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.kitap img {
+    max-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Kitap ekleme formu */
+form {
+    margin-top: 40px;
+    background-color: #fff5e1; /* Krem rengi form arka planı */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    padding: 10px 15px;
+    background-color: #d8b39d; /* Açık kahverengi-krem tonları */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e0be8e; /* Hover için daha sıcak kahverengi */
+}
+
+/* Footer */
+footer {
+    background-color: #f5deb3; /* Krem rengi */
+    color: #333;
+    padding: 10px 0;
+    text-align: center;
+} 
